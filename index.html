@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6213392f31.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><i class="fa-regular fa-star"></i></a>
+            <nav>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                  <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="#seccion-principal">Inicio</a></li>
+                    <li><a href="#acerca-de">Acerca de mí</a></li>
+                    <li><a href="#trabajos">Trabajos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="../formulario/formulario.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main id="seccion-principal">
+        <section class="seccion-1">
+            <div class="acerca-de">
+                <h2>Acerca de mí</h2>
+                <p>Bienvenido a mi web</p>
+                <p>El ayer es historia, el mañana es un misterio, el hoy es un regalo, por eso se llama presente</p>
+            </div>
+            <div class="acerca-imagen">
+                <img src="https://i.pinimg.com/236x/81/01/a4/8101a432ae9f1f92cb7aa0d87cec54de.jpg" alt="imagen_gatito">
+            </div>
+        </section>
+        <section class="seccion-2">
+            <img src="https://i.pinimg.com/236x/58/9e/14/589e1409b4bc80e0b5ba99538251d66c.jpg" alt="gato_cejas">
+        </section>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ol>
+    </main>
+
+    <footer>
+        <div> Estructura</div>
+        <span> Estructura 2</span>
+    </footer>
+
+    <!-- Botón y sección de frases aleatorias -->
+    <button id="btn-generar">Generar Frase Aleatoria</button>
+    <footer id="footer">
+        <p id="frase"></p>
+    </footer>
+
+    <!-- Vinculación del archivo JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>

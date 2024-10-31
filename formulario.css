@@ -1,0 +1,162 @@
+/* Estilos generales */
+ol,
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #948E99;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2E1437, #948E99);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2E1437, #948E99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    
+    header {
+        display: flex;
+        background: #6441A5;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header a i {
+        color: white;
+        font-size: 3em;
+        padding: 0.5em;
+    }
+    header nav ul {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0.8em;
+        font-size: 1.3em;
+        display: flex;
+        gap: 1.7em;
+    }
+    header nav ul li a {
+        color: rgb(215, 250, 245);
+    }
+    
+    /* Media queries for responsive menu */
+    #check {
+        display: none;
+    }
+    .checkbtn {
+        font-size: 35px;
+        color: white;
+        float: right;
+        line-height: 99px;
+        margin-right: 50px;
+        cursor: pointer;
+        display: none;
+    }
+    @media (max-width: 768px) {
+        header {
+            background-color: #2E1437;
+        }
+        .checkbtn {
+            display: block;
+        }
+        #encabezado ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #f4c4f3;
+            top: 80px;
+            left: 100%;
+            text-align: center;
+            transition: all 0.5s;
+        }
+        #check:checked ~ ul {
+            left: 0%;
+            display: block;
+        }
+        #encabezado nav ul li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        #encabezado nav ul li a {
+            font-size: 20px;
+        }
+        #check:checked ~ .checkbtn {
+            color: aqua;
+        }
+    }
+    
+
+/* Formulario */
+form {
+    max-width: 500px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+}
+
+form li {
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #6441A5;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.button button {
+    width: 100%;
+    padding: 0.75em;
+    background-color: #6441A5;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button button:hover {
+    background-color: #502f87;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #2E1437;
+    color: #ffffff;
+}
