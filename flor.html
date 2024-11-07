@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floristería Wenlu</title>
+  <link rel="stylesheet" href="flor.css">
+  <script defer src="flor.js"></script>
+</head>
+<body>
+  <header class="header">
+    <img src="img/logo_principal.png" alt="Logo de Floristería Wenlu" class="logo">
+    <h1>Bienvenidos a Wenlu</h1>
+    <p>Shopper de Flores</p>
+  </header>
+  
+  <section class="services">
+    <h2>Nuestros Servicios</h2>
+    <div class="service-card" id="arrangements-button">Arreglos Florales</div>
+    <div class="service-card">Decoración de Eventos</div>
+    <div class="service-card" id="delivery-button">Envíos a Domicilio</div>
+
+  </section>
+  
+  <!-- Contenedor de ideas para arreglos florales -->
+  <section class="arrangements-ideas" id="arrangements-ideas">
+    <h3>Ideas para tus arreglos</h3>
+    <div class="arrangement">
+      <img src="img/arreglo_1.jpg" alt="Arreglo Floral 1">
+      <p>Precio: $40</p>
+    </div>
+    <div class="arrangement">
+      <img src="img/arreglo_2.jpg" alt="Arreglo Floral 2">
+      <p>Precio: $55</p>
+    </div>
+    <div class="arrangement">
+      <img src="img/arreglo_3.jpg" alt="Arreglo Floral 3">
+      <p>Precio: $70</p>
+    </div>
+    <div class="arrangement">
+        <img src="img/arreglo_4.jpg" alt="Arreglo Floral 4">
+        <p>Precio: $60</p>
+      </div>
+  </section>
+
+  <!-- Contenedor de decoraciones de eventos -->
+  <section class="decor-events-ideas" id="decor-events-ideas">
+    <h3>Ideas para decoraciones de eventos</h3>
+    <div class="decoration" id="decoration1">
+      <img src="img/decoracion_1.jpeg" alt="Decoración 1">
+      <p>Decoración de mesa elegante</p>
+    </div>
+    <div class="decoration" id="decoration2">
+      <img src="img/decoracion_2.jpeg" alt="Decoración 2">
+      <p>Decoración con globos</p>
+    </div>
+    <div class="decoration" id="decoration3">
+      <img src="img/decoracion_3.jpeg" alt="Decoración 3">
+      <p>Decoración con flores naturales</p>
+    </div>
+    <div class="decoration" id="decoration4">
+      <img src="img/decoracion_4.jpeg" alt="Decoración 4">
+      <p>Centro de mesa rústico</p>
+    </div>
+    <div class="decoration" id="decoration5">
+      <img src="img/decoracion_5.jpeg" alt="Decoración 5">
+      <p>Arco floral</p>
+    </div>
+    <div class="decoration" id="decoration6">
+      <img src="img/decoracion_6.jpeg" alt="Decoración 6">
+      <p>Decoración de entrada</p>
+    </div>
+  </section>
+
+  <!-- Contenedor del formulario -->
+  <div class="form-container" id="form-container">
+    <form action="/my-handling-form-page" method="post">
+      <ul>
+        <li>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="user_name" required />
+        </li>
+        <li>
+          <label for="phone">Teléfono:</label>
+          <input type="phone" id="phone" name="user_phone" required />
+        </li>
+        <li>
+          <label for="mail">Correo electrónico:</label>
+          <input type="email" id="mail" name="user_mail" required />
+        </li>
+        <li>
+          <label for="msg">Mensaje:</label>
+          <textarea id="msg" name="user_message" required></textarea>
+        </li>
+        <li class="button">
+          <button type="submit">Enviar</button>
+        </li>
+      </ul>
+    </form>
+  </div>
+  
+  <footer class="footer">
+    <p>Contacto: info@floristeriawenlu.com | Teléfono: +123 456 789</p>
+  </footer>
+
+ <!-- Botón para mostrar frases motivacionales -->
+<div class="quote-container">
+    <button id="quote-button">Ver frase inspiradora</button>
+    <div id="quote-display" class="quote-display"></div>
+  </div>
+    
+</body>
+</html>
+
